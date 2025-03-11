@@ -8,7 +8,7 @@ function App() {
 
   const analyzeSentiment = async () => {
     try {
-      const response = await axios.post("https://sentiment-analysis-backend.onrender.com/api/analyze/", {
+      const response = await axios.post("https://sentiment-analysis-backend-c07o.onrender.com", {
         text: text
       });
       setSentiment(response.data.sentiment);
